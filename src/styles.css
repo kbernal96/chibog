@@ -1,3 +1,32 @@
 body {
     text-align:center;
 }
+
+.branding {
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 90px;
+}
+
+.welcome {
+    background-color:hsl(120, 25%, 65%, 25%);
+    padding: 40px;
+}
+
+.chibog {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.pronounciation {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.definition {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 14px;
+}

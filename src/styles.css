@@ -14,6 +14,17 @@ h1 {
     letter-spacing: .2em;
 }
 
+p {
+    padding: 7em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 5em;
+    padding-top: 5em;
+}
+
 footer i {
     font-size: 35px;
 }
@@ -39,6 +50,7 @@ footer a {
     font-weight: 900;
     font-size: 50px;
     letter-spacing: .1em;
+    text-align: left;
 }
 
 .pronounciation {
@@ -52,6 +64,7 @@ footer a {
     font-weight: 300;
     font-size: 25px;
     line-height: 1.5em;
+    text-align: left;
 }
 
 .recipe-information {
@@ -83,42 +96,106 @@ footer a {
     font-family: 'Roboto Mono', monospace;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width:992px) {
     h1 {
         font-family: 'Caveat', cursive;
-        font-size: 30px;
+        font-size: 70px;
         letter-spacing: .2em;
         text-align: center;
     }
 
-    footer i {
-        font-size: 15px;
+    p {
+        padding: 3em;
+    }
+
+    footer {
+        padding-top: 1em;
     }
 
     .welcome {
-        background-color:var(--main-color);
-        padding: 25px;
-    }    
-
+            background-color:var(--main-color);
+            padding: 25px;
+        }    
+    
     .chibog {
-        font-family: 'Merriweather Sans', sans-serif;
-        font-weight: 900;
-        font-size: 20px;
-        letter-spacing: none;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-weight: 900;
+            font-size: 30px;
+            letter-spacing: none;
+            text-align: center;
+        }
+    
+    .pronounciation {
+            font-size: 28px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+    .welcome-image {
+        max-width: 300px;
+        max-height: 300px;
+        display: block;
+        margin: auto;
+    }
+        
+    .definition {
+            margin-top: 1em;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+}
+
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 30px;
     }
 
+    p {
+        padding: 2em;
+        font-size: 13px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    footer div {
+        font-size: 12px;
+    }
+
+    .chibog {
+        font-size: 20px;
+        letter-spacing: none;
+        }
+    
     .pronounciation {
         font-size: 18px;
         font-weight: 500;
         font-style: italic;
+        }
+
+    .welcome-image {
+        max-width: 300px;
+        max-height: 300px;
+        display: block;
+        margin: auto;
     }
-    
+        
     .definition {
+        margin-top: 1em;
         font-family: 'Roboto Mono', monospace;
         font-weight: 300;
         font-size: 11px;
         line-height: 1.5em;
+        text-align: center;
+    }
+
+    footer i {
+        font-size: 18px;
     }
     
     .recipe-information {

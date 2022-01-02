@@ -1,22 +1,44 @@
+:root {
+    --main-color:hsl(120, 25%, 65%, 25%);
+    --secondary-color: hsl(120, 100%, 25%);
+}
+
 body {
     text-align:center;
 }
 
-.branding {
+h1 {
     font-family: 'Caveat', cursive;
     font-weight: 600;
-    font-size: 90px;
+    font-size: 120px;
+    letter-spacing: .2em;
+}
+
+footer i {
+    font-size: 35px;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    padding: 15px;
 }
 
 .welcome {
-    background-color:hsl(120, 25%, 65%, 25%);
-    padding: 40px;
+    background-color:var(--main-color);
+    padding: 70px;
 }
 
 .chibog {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 50px;
+    letter-spacing: .1em;
 }
 
 .pronounciation {
@@ -28,5 +50,102 @@ body {
 .definition {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+.recipe-information {
+    text-align: left;
+}
+
+.recipe-name {
+    font-size: 47px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+}
+
+.recipe-name:hover {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: bolder;
+}
+.recipe-pic {
+    background-color: var(--main-color);
+    padding: 50px 25px;
+    border-radius: 50%;
+}
+
+
+.recipe-description {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-family: 'Caveat', cursive;
+        font-size: 30px;
+        letter-spacing: .2em;
+        text-align: center;
+    }
+
+    footer i {
+        font-size: 15px;
+    }
+
+    .welcome {
+        background-color:var(--main-color);
+        padding: 25px;
+    }    
+
+    .chibog {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        letter-spacing: none;
+    }
+
+    .pronounciation {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    .definition {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 1.5em;
+    }
+    
+    .recipe-information {
+        text-align: left;
+        background-color: var(--main-color);
+        padding: 20px 15px;
+        border-radius: 15%;
+    }
+
+    .recipe-name {
+        font-size: 25px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .recipe-description {
+        color: black;
+        font-size: 13px;
+        line-height: .5em;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--main-color);
+        padding: 10px;
+    }
 }

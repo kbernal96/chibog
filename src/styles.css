@@ -14,6 +14,13 @@ h1 {
     letter-spacing: .2em;
 }
 
+h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: .1em;
+}
+
 p {
     padding: 7em;
     font-family: 'Roboto Mono', monospace;
@@ -33,6 +40,11 @@ footer a {
     color: var(--secondary-color);
 }
 
+.navbar {
+    border-style: double none double;
+    border-color: var(--secondary-color);
+}
+
 .contact-links {
     display: flex;
     justify-content: space-evenly;
@@ -45,7 +57,7 @@ footer a {
     padding: 70px;
 }
 
-.chibog {
+.chibog, {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 900;
     font-size: 50px;
@@ -71,7 +83,7 @@ footer a {
     text-align: left;
 }
 
-.recipe-name {
+.recipe-name, .about-recipe-name {
     font-size: 47px;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 700;
@@ -94,6 +106,31 @@ footer a {
     font-size: 20px;
     line-height: 1.5em;
     font-family: 'Roboto Mono', monospace;
+}
+
+.ingredients, .instructions {
+    background-color: var(--main-color);
+    padding: 2em;
+    border-radius: 2%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.about p {
+    border-style: double;
+    border-color: var(--secondary-color);
+    padding: 1.5em;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+
+.contact-form {
+    background-color: var(--main-color);
+    padding: 2em;
+    border-radius: 1em;
+    text-align: left;
 }
 
 @media (max-width:992px) {

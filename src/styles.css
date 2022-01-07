@@ -3,6 +3,39 @@
     --secondary-color: hsl(120, 100%, 25%);
 }
 
+nav {
+    display: inline;
+    padding: 2em;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 1em;
+}
+
+
+nav li a {
+    color: #272142;
+    text-decoration: none;
+    display: inline;
+    padding: 0;
+    margin: 0;   
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
 body {
     text-align:center;
 }
@@ -43,6 +76,11 @@ footer a {
 .navbar {
     border-style: double none double;
     border-color: var(--secondary-color);
+}
+
+.active {
+    color: var(--secondary-color);
+    font-weight: 500;
 }
 
 .contact-links {
@@ -111,7 +149,7 @@ footer a {
 .ingredients, .instructions {
     background-color: var(--main-color);
     padding: 2em;
-    border-radius: 2%;
+    border-radius: 1em;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     font-weight: 300;

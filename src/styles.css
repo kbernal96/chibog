@@ -95,7 +95,7 @@ footer a {
     padding: 70px;
 }
 
-.chibog, {
+.chibog {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 900;
     font-size: 50px;
@@ -121,7 +121,7 @@ footer a {
     text-align: left;
 }
 
-.recipe-name, .about-recipe-name {
+.recipe-name, .recipe-page-name {
     font-size: 47px;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 700;
@@ -137,7 +137,6 @@ footer a {
     padding: 50px 25px;
     border-radius: 50%;
 }
-
 
 .recipe-description {
     color: black;
@@ -187,18 +186,22 @@ footer a {
         padding-top: 1em;
     }
 
-    .welcome {
-            background-color:var(--main-color);
-            padding: 25px;
-        }    
+    h6 {
+        font-size: 14px;
+    }
     
-    .chibog {
+    h2, .chibog {
             font-family: 'Merriweather Sans', sans-serif;
             font-weight: 900;
             font-size: 30px;
             letter-spacing: none;
             text-align: center;
         }
+
+    .welcome {
+            background-color:var(--main-color);
+            padding: 25px;
+        }    
     
     .pronounciation {
             font-size: 28px;
@@ -221,12 +224,34 @@ footer a {
             line-height: 1.5em;
             text-align: center;
         }
+
+    .recipe-page-photo {
+        margin-bottom: 1em;
+    }
+
+    .recipe-page-name {
+        font-size: 28px;
+    }
+
+    .ingredients, .instructions {
+        font-size: 12px;
+    }
+
+    .about p {
+        padding: 1em;
+        font-size: 15px;
+        font-weight: 400;
 }
 
 @media (max-width: 767px) {
 
     h1 {
         font-size: 30px;
+    }
+
+    nav li a {
+        letter-spacing: 0px;
+        font-size: 10px;
     }
 
     p {
@@ -242,7 +267,17 @@ footer a {
         font-size: 12px;
     }
 
-    .chibog {
+    .logo {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+    
+    h2, .chibog {
         font-size: 20px;
         letter-spacing: none;
         }
@@ -280,8 +315,8 @@ footer a {
         border-radius: 15%;
     }
 
-    .recipe-name {
-        font-size: 25px;
+    .recipe-name, .recipe-page-name {
+        font-size: 23px;
         font-family: 'Merriweather Sans', sans-serif;
         font-weight: 700;
         text-align: center;
@@ -299,5 +334,14 @@ footer a {
         justify-content: space-evenly;
         background-color: var(--main-color);
         padding: 10px;
+    }
+
+    .ingredients, .instructions {
+        font-size: 11px;
+    }
+
+    .about p {
+        padding: 1.5em;
+        font-size: 13px;
     }
 }

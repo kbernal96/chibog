@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="All about the chibog food blog and how it sparked the desire to share my love for cooking."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400&family=Caveat:wght@400;500;600&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,500&family=Roboto+Mono:wght@100;200;300;400&family=Source+Code+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -11,14 +16,14 @@
     <script src="https://kit.fontawesome.com/b83cc7c1d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/styles.css">
 
-    <title>About</title>
+    <title>About chibog</title>
 </head>
 <body>
     <h1 class="branding mt-3">Chibogan na! 🍴</h1>
 
     <nav class="navbar">
       <a href="/" class="text-decoration-none">
-          <h3 class="logo">🍴</h3>
+          <h3 class="logo" title="chibog logo">🍴</h3>
       </a>
       <ul class="list-unstyled">
           <li><a href="/">Home</a></li>
@@ -30,7 +35,7 @@
 
       <div class="container">
           
-            <h2 class="mt-5 mb-5">About</h2>
+            <h2 class="mt-5 mb-1">About</h2>
             
             <div class="row justify-content-evenly">
                 <div class="col-md-7 about align-self-center mt-5">
@@ -45,27 +50,31 @@
                             this food blog will be a gateway for more people to be more open and possibly capture a new favorite cusine. So come on, mga kaibigan! Chibogan na!
                         </p>           
                     </div>
-                    <div class="about-photo col-md-5">
-                        <img src="/images/filipino clipart.jpg" class="img-fluid img-md-none">
+                    <div class="about-photo col-md-5 d-none d-md-block">
+                        <img src="/images/filipino clipart.jpg" class="img-fluid" alt="a photo of chibog">
+                    </div>
+                    <div class="about-photo col-md-5 d-block d-md-none">
+                        <img src="/images/filipino clipart.jpg" class="img-fluid" alt="a photo of chibog" width="150" height="300">
                     </div>
             </div>
         </div>
     
-      <footer>
-        <h4> Need more?</h4>
-        <div>Reach us through these links</div>
-        <div class="contact-links">
-             <a href="https://www.facebook.com/" target="blank">
-                <i class="fab fa-facebook-square"></i>                
-            </a>
-            <a href="mailto:chibogan@gmail.com">
-                <i class="fas fa-envelope-square"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="blank">
-                <i class="fab fa-instagram-square"></i>
-            </a>
-        </div>
-    </footer>
-
+        <footer>
+            <h4> Need more?</h4>
+            <div>Reach us through these links</div>
+            <div class="contact-links">
+                 <a href="https://www.facebook.com/" target="blank" title="chibog's facebook page">
+                    <i class="fab fa-facebook-square"></i>                
+                </a>
+                <a href="mailto:chibogan@gmail.com" title="chibog's email address">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="blank" title="chibog's instagram page">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <p class="coder"><a href="https://github.com/kbernal96/chibog" class="code-source">Open sourced</a> code by Karla Bernal</p>
+        </footer>
+    
 </body>
 </html>
